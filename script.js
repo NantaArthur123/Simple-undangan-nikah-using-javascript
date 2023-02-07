@@ -1,3 +1,12 @@
+window.onload = function getname_undangan(){
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const nameurl = urlParams.get('name')
+console.log(nameurl);
+document.getElementsByClassName("nama_undangan")[0].innerHTML = nameurl;
+document.getElementById("info").getElementsByClassName("nama_undangan")[0].innerHTML = nameurl
+}
+
 
 // AOS
 AOS.init({
@@ -27,6 +36,15 @@ AOS.init({
 document.getElementById("info").onscroll = function () {  
 
 }
+
+// MusicPlay
+function play(){
+  var audio = document.getElementById("audio");
+        audio.play();
+  document.getElementById("first_modal").style.visibility ="hidden";
+}
+
+
 
 
 // Progressbar
@@ -65,8 +83,8 @@ document.getElementById("info").onscroll = function () {
 };
 
 // Timer
-CountDownTimer('02/17/2023 08:00 AM', 'countdown');
-CountDownTimer('02/17/2023 08:00 AM', 'newcountdown');
+CountDownTimer('02/19/2023 11:00 AM', 'countdown');
+CountDownTimer('02/19/2023 11:00 AM', 'newcountdown');
 
 function CountDownTimer(dt, id)
 {
