@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Cormorant:ital@0;1&family=Cutive+Mono&family=Great+Vibes&family=Roboto+Mono:ital,wght@0,100;1,100&display=swap');
+
+body {
+  min-height:100%;
+  background-color: #33192e;
+}
+html {
+  height: 100%;
+  background-color: #33192e;
+}
+
+.container2 {
+  position: fixed !important;
+  height: 100%;
+  overflow: auto !important;
+  scroll-snap-type: y mandatory !important;
+}
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(var(--vh, 1vh) * 100);
+  scroll-snap-align: center;
+}
+
+
+.progress-container {
+  background-color: rgba(150, 150, 150, 0.6);
+  height: 10px;
+  width: 100%;
+}
+
+.progress-bar {
+  background-color: #f32121;
+  height: 10px;
+  width: 0%;
+}
+.header2 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Simple coloration */
+body {
+  margin: 0 !important;
+}
+.slide {
+  background: #33192f;
+}
+.slide:nth-child(2n) {
+  background: #33192f;
+}
+
+
+/* Typefaces */
+.judul-main {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.sub-main{
+  font-family: 'Cormorant', serif;
+}
+
+.count-main{
+  font-family: 'Roboto Mono', monospace;
+  font-size: xx-large;
+}
+
+.warna-utama{
+  color: #efe6ee;
+}
+.warna-aksen{
+  color: #bbc711;
+}
+
+/* Backgrounds */
+.hero-bg {
+  background-image: url("section1.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #cccccc;
+}
+
+.section2-bg{
+  background-image: url("section2.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #cccccc;
+}
+
+.section3-bg{
+  background-image: url("section3.png") !important;
+  background-size: cover;
+  background-position: center;
+  background-color: #cccccc;
+}
+#section4-bg{
+  background-image: url("section4.png");
+  background-position: top center;
+  background-attachment:scroll;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+}
+#section5-bg{
+  background-image: url("section5.png");
+  background-position: top center;
+  background-attachment:scroll;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+}
+
+
+.white-box {
+  border-radius: 50px;
+  background-color: #cccccceb;
+  width: 80%;
+
+}
+
+.undangan-bg{
+  background-color: #32182e;
+}
+
+.foto-container{
+  background-color: aqua;
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+/* Layout */
+.main-layout-full {
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+}
+.event-box{
+  background-color: #32182ed9;
+  padding: 50px;
+}
+
+/* Filter */
+.putih{
+  filter: brightness(500%);
+}
+
+
+.video-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.video-container video {
+width: 100%;
+height: 100%;
+filter: brightness(50%);
+position: absolute;
+object-fit: cover;
+z-index: 0;
+}
+
